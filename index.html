@@ -1,23 +1,9 @@
 <!DOCTYPE html>
-<html lang="ar" dir="rtl">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Porsche 3D Viewer</title>
-    <script type="module" src="https://unpkg.com/@model-viewer/public@v3.4.0/dist/model-viewer.min.js"></script>
-    <style>
-        * { box-sizing: border-box; margin: 0; padding: 0; }
-        body { background-color: #0b0b0b; font-family: Tahoma, sans-serif; color: #fff; height: 100vh; overflow: hidden; display: flex; flex-direction: column; justify-content: space-between; }
-        header { padding: 15px; background: rgba(20,20,20,0.9); text-align: center; color: #ff7700; font-weight: bold; }
-        model-viewer { width: 100%; height: 100vh; }
-        .ui { position: absolute; bottom: 30px; left: 50%; transform: translateX(-50%); background: rgba(0,0,0,0.6); padding: 10px 20px; border-radius: 30px; display: flex; gap: 10px; z-index: 10; }
-        #ar-btn { background: #ff7700; color: white; border: none; padding: 8px 15px; border-radius: 15px; font-weight: bold; }
-    </style>
+<script type="module" src="https://unpkg.com/@model-viewer/public@v3.4.0/dist/model-viewer.min.js"></script>
 </head>
 <body>
-    <header>معرض Porsche 911 التفاعلي</header>
-    <model-viewer id="car" src="https://modelviewer.dev/shared-assets/models/Astronaut.glb" ar camera-controls auto-rotate shadow-intensity="1">
-        <button slot="ar-button" id="ar-btn">📱 اعرضها بغرفتك (AR)</button>
-    </model-viewer>
+<model-viewer src="https://modelviewer.dev/shared-assets/models/Astronaut.glb" camera-controls auto-rotate></model-viewer>
 </body>
 </html>
